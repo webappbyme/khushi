@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi's Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#calculator">Tuition Fee Calculator</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1><i>Welcome to Khushi's Institute</i></h1>
+        <p>Your gateway to excellence in education and a brighter future.</p>
+        <img src="institute.jpg" alt="Campus Image" class="fade-in">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Khushi's Institute is dedicated to fostering an environment where students can thrive. We are committed to academic excellence, offering state-of-the-art facilities and an experienced faculty. Our mission is to shape tomorrow's leaders by nurturing creativity, critical thinking, and a passion for lifelong learning.</p>
+        <div class="image-container">
+            <img src="about.jpg" alt="Campus Image 1" class="fade-in">
+            <img src="about2.jpg" alt="Campus Image 2" class="fade-in">
+            <img src="about3.jpg" alt="Campus Image 3" class="fade-in">
+            <img src="about4.jpg" alt="Campus Image 4" class="fade-in">
+            <img src="about5.jpg" alt="Campus Image 5" class="fade-in">
+        </div>
+        <br>
+        </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Bachelor's Program in Computer Science</li>
+            <li>Bachelor's Program in Business Administration</li>
+            <li>Bachelor's Program in Psychology</li>
+            <li>Master's Program in Data Science</li>
+            <li>Master's Program in Finance</li>
+            <li>PhD in Educational Leadership</li>
+            <li>PhD in Artificial Intelligence</li>
+            <li>Diploma in Graphic Design</li>
+            <li>Certificate in Digital Marketing</li>
+            <li>Certificate in Project Management</li>
+        </ul>
+    </section>
+
+    <!-- Tuition Fee Calculator -->
+    <section id="calculator">
+        <h2>Tuition Fee Calculator</h2>
+        <form>
+            <label for="program">Select Program:</label><br>
+            <select id="program">
+                <option value="5000">Bachelor's Program</option>
+                <option value="7000">Master's Program</option>
+                <option value="10000">PhD Program</option>
+            </select><br><br>
+            <label for="credits">Number of Credits:</label><br>
+            <input type="number" id="credits" placeholder="Enter credits"><br><br>
+            <button type="button" onclick="calculateFee()">Calculate Fee</button>
+        </form>
+        <p id="fee-result"></p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Khushi Institute. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
